@@ -1,0 +1,12 @@
+{
+    "name": "react_docker",
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "remoteUser": "user",
+    "forwardPorts": [8100],
+    "settings": {
+      "terminal.integrated.shell.linux": null
+    },
+    "workspaceMount": "source=${localWorkspaceFolder}/src,target=/home/user/app,type=bind,consistency=delegated",
+    "workspaceFolder": "/home/user/app"
+}
